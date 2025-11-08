@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hami MiniMarket — Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Hami MiniMarket</div>
+    <nav class="nav-right">
+      <a href="order.html" class="order-link">Order Summary</a>
+      <button id="cart-btn" class="cart-btn" aria-label="Open cart">
+        🛒 <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </nav>
+  </header>
+  
+
+  <main class="container">
+    <section class="products-section">
+      <h1>Products</h1>
+      <div id="products-grid" class="products-grid"></div>
+    </section>
+  </main>
+
+  <!-- Cart sidebar/modal -->
+  <aside id="cart-sidebar" class="cart-sidebar hidden" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart" class="close-cart" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="summary-line"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+      <div class="summary-line"><span>Tax (5%)</span><span id="tax">$0.00</span></div>
+      <div class="summary-line"><span>Discount</span><span id="discount">-$0.00</span></div>
+      <div class="summary-line total"><span>Total</span><span id="total">$0.00</span></div>
+      <div class="cart-actions">
+        <a id="go-to-order" class="btn primary" href="order.html">Proceed to Order</a>
+        <button id="clear-cart" class="btn">Clear Cart</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <script type="module" src="js/product.js"></script>
+  <script type="module" src="js/cart.js"></script>
+</body>
+</html>

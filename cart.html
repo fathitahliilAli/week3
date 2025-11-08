@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - Hami MiniMarket</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal ">
+    <div class="cart-content">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Tax (5%): $<span id="tax">0.00</span></p>
+        <!-- <p>Discount (10% if > $50): $<span id="discount">0.00</span></p> -->
+        <h3>Total: $<span id="total">0.00</span></h3>
+        <a href="order.html"><button id="order-btn">Order Now</button></a>
+      </div>
+      <a href="index.html"><button id="close-cart">Close</button></a>
+    </div>
+  </div>
+   <script type="module" src="js/cart.js"></script>
+</body>
+</html>
